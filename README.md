@@ -12,6 +12,7 @@
 
 ## Feature / nice to have:
 
-Weapon system
-Ammo system / reload
-Enviroment stuff (explosives + storms/quick sand)
+1. Weapon system
+2. Ammo system / reload
+3. Enviroment stuff (explosives + storms/quick sand)
+4. gulag
