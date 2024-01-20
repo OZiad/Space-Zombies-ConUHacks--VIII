@@ -37,9 +37,14 @@ public class EnemyController : MonoBehaviour
     private void Die()
     {
         // Play death animation, effects, etc. here
-
-
-
         Destroy(gameObject);
+    }
+    void OnDestroy()
+    {
+        if (GameObject.FindGameObjectWithTag("WaveSpawner") != null)
+        {
+            GameObject.FindGameObjectWithTag("WaveSpawner").GetComponent<WaveSpawner>().spawnedEnemies.Remove(gameObject);
+        }
+
     }
 }
