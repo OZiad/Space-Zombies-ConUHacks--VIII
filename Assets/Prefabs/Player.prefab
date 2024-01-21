@@ -649,11 +649,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1757722635409341967, guid: a47b7a24963407b41b1f15f885772e56, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.651414
+      value: 11.72
       objectReference: {fileID: 0}
     - target: {fileID: 1757722635409341967, guid: a47b7a24963407b41b1f15f885772e56, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.374184
+      value: 17.42
       objectReference: {fileID: 0}
     - target: {fileID: 4848147620134953900, guid: a47b7a24963407b41b1f15f885772e56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -695,10 +695,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5112899509316181524, guid: a47b7a24963407b41b1f15f885772e56, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112899509316181524, guid: a47b7a24963407b41b1f15f885772e56, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.42
+      objectReference: {fileID: 0}
     - target: {fileID: 6096045651312395610, guid: a47b7a24963407b41b1f15f885772e56, type: 3}
       propertyPath: m_Name
       value: FollowPlayerCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 7836166384335716154, guid: a47b7a24963407b41b1f15f885772e56, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 5030156173904692463}
     m_RemovedComponents:
     - {fileID: 4194820907071792947, guid: a47b7a24963407b41b1f15f885772e56, type: 3}
     m_RemovedGameObjects: []
