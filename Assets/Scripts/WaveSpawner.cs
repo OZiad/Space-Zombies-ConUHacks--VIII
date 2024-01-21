@@ -91,6 +91,7 @@ public class WaveSpawner : MonoBehaviour
         {
             int randEnemyId = Random.Range(0, enemies.Count);
             int randEnemyCost = enemies[randEnemyId].cost;
+            Debug.Log(randEnemyCost);
 
             if (waveValue - randEnemyCost >= 0)
             {

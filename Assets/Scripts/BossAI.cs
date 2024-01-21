@@ -7,13 +7,14 @@ public class BossAI : MonoBehaviour
     public GameObject player;
     public GameObject[] mobs;
     [SerializeField] protected int dmg = 1;
-    [SerializeField] public int health = 1;
+    private int health = 10;
+    [SerializeField] public int maxHealth;
     public float speed = 1;
     [SerializeField] private float distance = 1;
 
-
     public void Start()
     {
+        maxHealth = health;
         StartCoroutine(RollEvery10Seconds());
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -29,9 +30,24 @@ public class BossAI : MonoBehaviour
         transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
         transform.rotation = Quaternion.Euler(Vector3.forward * angle);
     }
+    private void UpdateScore()
+    {
 
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        Score score = player.GetComponent<Score>();
 
-      private void OnCollisionEnter2D(Collision2D other)
+        Debug.Log(player == null);
+        if (score != null)
+        {
+            score.UpdateScore(maxHealth);
+        }
+        else
+        {
+            Debug.LogError("Score script not found on the player!");
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Bullet"))
         {
@@ -84,7 +100,7 @@ public class BossAI : MonoBehaviour
 
     private IEnumerator RollEvery10Seconds()
     {
-        while(true)
+        while (true)
         {
             yield return new WaitForSeconds(2);
             int currentRoll = Roll();
@@ -127,5 +143,5 @@ public class BossAI : MonoBehaviour
                 break;
         }
     }
-    
+
 }

@@ -206,9 +206,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - enemyPrefab: {fileID: 7479476026497626933, guid: 5c2396fac6eb2b04e9ae2d1a6e741d02, type: 3}
+  - enemyPrefab: {fileID: 952838291788098002, guid: 899915da5d758fd469c38f22a3322bf6, type: 3}
     cost: 1
-  - enemyPrefab: {fileID: 7479476026497626933, guid: 0eb3730f53126084a983744900052816, type: 3}
+  - enemyPrefab: {fileID: 2560878089586764788, guid: 73e4524d986dcfd43ad8051aceaaf919, type: 3}
     cost: 3
   currWave: 1
   enemiesToSpawn: []
