@@ -12,12 +12,25 @@ public class idleEntrance : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mAnimator.SetTrigger("TrEntrance"); 
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        AudioSource playerAudio = player.GetComponent<AudioSource>();
 
+        if (playerAudio != null && playerAudio.isPlaying)
+        {
+            playerAudio.Stop();
+        }
+
+        mAnimator.SetTrigger("TrEntrance"); 
         mAnimator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         vel = rb.velocity;
         speed = rb.velocity.magnitude;
+
+         AudioSource mobAudio = GetComponent<AudioSource>();
+        if (mobAudio != null)
+        {
+            mobAudio.Play();
+        }
     }
 
     // Update is called once per frame
