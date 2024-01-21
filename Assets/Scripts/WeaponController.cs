@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class WeaponController : MonoBehaviour
 {
+    
     public Transform firePoint;
     public GameObject ammoType;
     public float shotSpeed;
