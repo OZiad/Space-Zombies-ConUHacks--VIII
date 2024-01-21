@@ -8,10 +8,12 @@
 
 1. ~~Wave System - increasing diffculty~~
 2. ~~UI display: health (ammo?)~~
-3. Pause : feature + UI
+3. ~~Pause: feature + UI~~
 4. Different Enemy types
 5. Animations (Zombies + Player)
-6. Score (UI TOO)
+6. ~~Score (UI TOO)~~
+7. Story -> initial story + round 20 boss
+8. Music
    
 **Feature / nice to have:**
 1. Weapon system
