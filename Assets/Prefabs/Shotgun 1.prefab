@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   ammoType: {fileID: 5056708152557977447, guid: 33c43e3de3f20b347bf02be4cd501771, type: 3}
-  shotSpeed: 40
-  shotCounter: 0
-  fireRate: 12
+  shotSpeed: 12
+  shotCounter: 1000
+  fireRate: 1000
   paw: {fileID: 0}
