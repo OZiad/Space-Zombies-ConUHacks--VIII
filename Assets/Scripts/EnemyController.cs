@@ -5,14 +5,16 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     // public PlayerHealth playerHealth;
-    [SerializeField] public int health = 1;
+    [SerializeField] public int maxHealth = 1;
+    [SerializeField] public int health;
     [SerializeField] protected int dmg = 1;
 
-    // public EnemyController(int health, int dmg)
-    // {
-    //     this.health = health;
-    //     this.dmg = dmg;
-    // }
+    private GameObject player;
+    private Score score;
+    void start()
+    {
+        health = maxHealth;
+    }
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Bullet"))
@@ -23,6 +25,7 @@ public class EnemyController : MonoBehaviour
                 health -= bullet.damage;
                 if (health <= 0)
                 {
+                    UpdateScore();
                     Die();
                 }
             }
@@ -34,12 +37,34 @@ public class EnemyController : MonoBehaviour
             Die();
         }
     }
+    private void UpdateScore()
+    {
+
+        player = GameObject.FindGameObjectWithTag("Player");
+        score = player.GetComponent<Score>();
+
+        Debug.Log(player == null);
+        if (score != null)
+        {
+            score.UpdateScore(maxHealth);
+        }
+        else
+        {
+            Debug.LogError("Score script not found on the player!");
+        }
+    }
     private void Die()
     {
         // Play death animation, effects, etc. here
 
-
-
         Destroy(gameObject);
+    }
+    void OnDestroy()
+    {
+        if (GameObject.FindGameObjectWithTag("WaveSpawner") != null)
+        {
+            GameObject.FindGameObjectWithTag("WaveSpawner").GetComponent<WaveSpawner>().spawnedEnemies.Remove(gameObject);
+        }
+
     }
 }

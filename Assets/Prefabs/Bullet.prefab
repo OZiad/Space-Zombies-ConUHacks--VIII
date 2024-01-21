@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5009310949145999385}
   - component: {fileID: 5229154933601909958}
   - component: {fileID: 59834352326465737}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -119,9 +119,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0027484894, y: 0}
+  m_Offset: {x: 0.001864488, y: 0}
   serializedVersion: 2
-  m_Radius: 0.11923885
+  m_Radius: 0.085630156
 --- !u!50 &5229154933601909958
 Rigidbody2D:
   serializedVersion: 4

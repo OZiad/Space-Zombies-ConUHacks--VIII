@@ -8,11 +8,13 @@ public class PlayerAimWeapon : MonoBehaviour
     public GameObject bullet;
     public Transform firePoint;
     public float bulletSpeed = 50;
-    private float angle;
+    public float angle;
     private Vector3 lookDirection;
     private Vector3 aimDirection;
     private Animator aimAnimator;
+    public GameObject Weapon;
 
+    
     private void Awake()
     {
         aimTransform = transform.Find("Aim");
@@ -23,7 +25,6 @@ public class PlayerAimWeapon : MonoBehaviour
     private void Update()
     {
         HandleAiming();
-        HandleShooting();
 
     }
 
@@ -38,17 +39,7 @@ public class PlayerAimWeapon : MonoBehaviour
         aimTransform.eulerAngles = new Vector3(0, 0, angle);
     }
 
-    private void HandleShooting()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            GameObject bulletClone = Instantiate(bullet);
-            bulletClone.transform.position = firePoint.position;
-            bulletClone.transform.rotation = Quaternion.Euler(0, 0, angle);
-
-            bulletClone.GetComponent<Rigidbody2D>().velocity = firePoint.right * bulletSpeed;
-        }
-    }
+   
 
 
 }
