@@ -11,6 +11,8 @@ TagManager:
   - shotgunPoint
   - Score
   - HightScore
+  - Shotgun
+  - Gun
   layers:
   - Default
   - TransparentFX
