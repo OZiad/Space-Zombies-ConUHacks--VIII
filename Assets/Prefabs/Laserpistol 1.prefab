@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 0}
-  ammoType: {fileID: 5056708152557977447, guid: 33c43e3de3f20b347bf02be4cd501771, type: 3}
-  shotSpeed: 80
+  ammoType: {fileID: 4174532106225371670, guid: 2c4ecfae2db38484fa495e2e6fb0b997, type: 3}
+  shotSpeed: 100
   shotCounter: 0
-  fireRate: 30
+  fireRate: 0
   paw: {fileID: 0}
