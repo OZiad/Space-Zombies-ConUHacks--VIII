@@ -46,8 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 1
   enemyPrefabs:
-  - {fileID: 7479476026497626933, guid: 5c2396fac6eb2b04e9ae2d1a6e741d02, type: 3}
-  - {fileID: 7479476026497626933, guid: 0eb3730f53126084a983744900052816, type: 3}
   - {fileID: 2560878089586764788, guid: 73e4524d986dcfd43ad8051aceaaf919, type: 3}
   - {fileID: 8217492761395919514, guid: 4ed7372f1c97a294f9b476813e249c72, type: 3}
   canSpawn: 1
