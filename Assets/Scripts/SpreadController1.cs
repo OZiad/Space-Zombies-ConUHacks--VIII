@@ -10,6 +10,8 @@ public class SpreadController : MonoBehaviour
     private float angle;
     public float shotCounter, fireRate;
     public PlayerAimWeapon paw;
+    public string weaponTag;
+
 
     // Start is called before the first frame update
     void Start()
@@ -22,26 +24,30 @@ public class SpreadController : MonoBehaviour
     void Update()
     {
         GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("shotgunPoint");
-        for(int i =0; i < gameObjects.Length; i++){
+        for (int i = 0; i < gameObjects.Length; i++)
+        {
             firePoints[i] = gameObjects[i].transform;
         }
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             shotCounter -= Time.deltaTime;
-            if(shotCounter <= 0){
+            if (shotCounter <= 0)
+            {
                 shotCounter = fireRate;
                 Shoot();
             }
-            else{
+            else
+            {
                 shotCounter = 0;
             }
         }
-    } 
+    }
     private void Shoot()
     {
-            
-        foreach(Transform firePoint in firePoints){
-            
+
+        foreach (Transform firePoint in firePoints)
+        {
+
             GameObject shot = Instantiate(ammoType, firePoint.position, firePoint.rotation);
             shot.transform.position = firePoint.position;
             shot.transform.rotation = Quaternion.Euler(0, 0, angle);
