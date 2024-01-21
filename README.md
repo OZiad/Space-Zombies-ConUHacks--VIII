@@ -6,11 +6,12 @@
 
 **MUST HAVE:**
 
-1. Wave System - increasing diffculty
-2. UI display: health (ammo?)
+1.~~Wave System - increasing diffculty~~
+2. ~~UI display: health (ammo?)~~
 3. Pause : feature + UI
 4. Different Enemy types
 5. Animations (Zombies + Player)
+6. Score (UI TOO)
    
 **Feature / nice to have:**
 1. Weapon system
