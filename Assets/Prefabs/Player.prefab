@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 5950918001534661370}
   m_Layer: 0
   m_Name: Gun
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -641,6 +641,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponSlot: {fileID: 7672109280388948246}
   activeWeapon: {fileID: 1271960143346111035, guid: 3ca626783654ae7479169ce7a1af0687, type: 3}
+  rifle: {fileID: 21300000, guid: 78c6aba06d4d92d469d2dc60ebfb3673, type: 3}
+  shotgun: {fileID: 21300000, guid: 67aa1a6120286c941b24f9c502cb6d77, type: 3}
+  smPistol: {fileID: 21300000, guid: a4f669abb303de1489ecadd96a9eafa4, type: 3}
+  lsrPistol: {fileID: 21300000, guid: c8b43c1524d19414488e4454a7b63e25, type: 3}
+  flameThrower: {fileID: 21300000, guid: 162d270d48627874a96945ff0ead48d2, type: 3}
 --- !u!114 &6579075612843407335
 MonoBehaviour:
   m_ObjectHideFlags: 0
