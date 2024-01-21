@@ -10,6 +10,7 @@
 2. UI display: health (ammo?)
 3. Pause : feature + UI
 4. Different Enemy types
+5. Animations (Zombies + Player)
    
 **Feature / nice to have:**
 1. Weapon system
