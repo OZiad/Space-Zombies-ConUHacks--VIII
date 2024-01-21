@@ -6,7 +6,7 @@
 
 **MUST HAVE:**
 
-1.~~Wave System - increasing diffculty~~
+1. ~~Wave System - increasing diffculty~~
 2. ~~UI display: health (ammo?)~~
 3. Pause : feature + UI
 4. Different Enemy types
