@@ -591,6 +591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 5
+  healthBar: {fileID: 0}
 --- !u!70 &5719838937741678660
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
